@@ -8,5 +8,104 @@
 	<artifactId>Expert-Systems</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- These are relative to the submodules -->
+		<project.source.basedir>${project.basedir}/src/main/java</project.source.basedir>
+		<project.resource.basedir>${project.basedir}/src/main/resources</project.resource.basedir>
+		<meta-inf.basedir>${project.resource.basedir}/META-INF</meta-inf.basedir>
+	</properties>
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jfoenix</groupId>
+			<artifactId>jfoenix</artifactId>
+			<version>9.0.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>13</source>
+					<target>13</target>
+				</configuration>
+
+			</plugin>
+
+			<plugin>
+				<artifactId>exec-maven-plugin</artifactId>
+				<groupId>org.codehaus.mojo</groupId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>Main</mainClass>
+				</configuration>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<filters>
+						<filter>
+							<excludes>
+								<artifact>*:*</artifact>
+								<exclude>META-INF/*.SF</exclude>
+								<exclude>META-INF/*.DSA</exclude>
+								<exclude>META-INF/*.RSA</exclude>
+							</excludes>
+						</filter>
+					</filters>
+					<transformers>
+						<transformer
+								implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+							<manifestEntries>
+								<Main-Class>Main</Main-Class>
+								<Build-Number>1</Build-Number>
+							</manifestEntries>
+						</transformer>
+					</transformers>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 
 </project>

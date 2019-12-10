@@ -1,0 +1,105 @@
+{
+    -fx-color-background: #121212;
+    -fx-color-on-background: #FFFFFF;
+
+    -fx-color-secondary-background: #282828;
+    -fx-color-on-secondary-background: #FFFFFF;
+
+    -fx-color-surface: #121212;
+    -fx-color-on-surface: #FFFFFF;
+
+    -fx-color-primary: #BB86FC;
+    -fx-color-primary-variant: #3700B3;
+    -fx-color-on-primary: #000000;
+
+    -fx-color-secondary: #03DAC6;
+    -fx-color-secondary-variant: #018786;
+    -fx-color-on-secondary: #000000;
+
+    -fx-color-error: #CF6679;
+    -fx-color-on-error: #000000;
+}
+
+.root {
+    -fx-background-color: -fx-color-background;
+    -fx-text-fill: -fx-color-on-background;
+}
+
+.label {
+    -fx-text-fill: -fx-color-on-background;
+}
+
+/* ################################################################################################################## */
+
+/*                                                       JFoenix                                                      */
+
+/* ################################################################################################################## */
+StackPane {
+    -fx-background-color: -fx-color-background;
+}
+
+.jfx-button {
+    -fx-text-fill: -fx-color-on-background;
+}
+
+.jfx-button:hover StackPane {
+    -fx-background-color: -fx-color-secondary-background;
+}
+
+.jfx-hamburger StackPane {
+    -fx-background-color: -fx-color-primary;
+}
+
+/* ################################################################################################################## */
+
+/*                                                        MENU                                                        */
+
+/* ################################################################################################################## */
+
+
+.menu-bar {
+    -fx-background-color: -fx-color-background;
+}
+
+.menu:hover {
+    -fx-background-color: -fx-color-secondary-background;
+}
+
+/*Moment of click*/
+.menu:armed {
+    -fx-background-color: -fx-color-primary;
+}
+
+/*When selected*/
+.menu:showing {
+    -fx-background-color: -fx-color-primary;
+}
+
+.menu-item {
+    -fx-background-color: -fx-color-background;
+    -fx-text-fill: -fx-color-on-background;
+}
+
+.menu-item:hover {
+    -fx-background-color: -fx-color-secondary-background;
+}
+
+.menu-item:focused {
+    -fx-background-color: -fx-color-secondary-background;
+}
+
+/*The thingy behind button on the list*/
+.context-menu {
+    -fx-background-color: -fx-color-background;
+}
+
+/* ################################################################################################################## */
+
+/*                                                        HUB                                                         */
+
+
+/* ################################################################################################################## */
+
+#TitlePane {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, -fx-color-secondary, -fx-color-primary);
+}
