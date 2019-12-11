@@ -1,35 +1,39 @@
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 
-public class Main extends Application {
+import java.io.IOException;
+
+public class Main
+        extends Application
+{
+    // static FXMLLoader MainFXMLLoader = new FXMLLoader();
 
     @Override
-    public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+    public void start(Stage primaryStage)
+    {
+        try
+        {
+            var root = (Parent) FXMLLoader.load(getClass().getResource("view/MainView.fxml"));
 
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+            var scene = new Scene(root, 1000, 800);
+            scene.getStylesheets().add(getClass().getResource("styles/Dark.css").toExternalForm());
 
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-
-        Scene scene = new Scene(root, 300, 250);
-
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+            primaryStage.setTitle("Hello World!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+        catch (IOException e)
+        {
+            System.out.println("Exception happened: " + e.getMessage());
+        }
     }
-    public static void main(String[] args) {
+
+    public static void main(String[] args)
+    {
         launch(args);
     }
 }
