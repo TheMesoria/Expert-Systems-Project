@@ -12,6 +12,9 @@
     -fx-color-primary-variant: #3700B3;
     -fx-color-on-primary: #000000;
 
+    -fx-color-blue: #3700B3;
+    -fx-color-red: #CF0000;
+
     -fx-color-secondary: #03DAC6;
     -fx-color-secondary-variant: #018786;
     -fx-color-on-secondary: #000000;
@@ -34,20 +37,12 @@
 /*                                                       JFoenix                                                      */
 
 /* ################################################################################################################## */
-StackPane {
-    -fx-background-color: -fx-color-background;
-}
-
 .jfx-button {
     -fx-text-fill: -fx-color-on-background;
 }
 
-.jfx-button:hover StackPane {
+.jfx-button:hover {
     -fx-background-color: -fx-color-secondary-background;
-}
-
-.jfx-hamburger StackPane {
-    -fx-background-color: -fx-color-primary;
 }
 
 /* ################################################################################################################## */
@@ -97,9 +92,28 @@ StackPane {
 
 /*                                                        HUB                                                         */
 
-
 /* ################################################################################################################## */
 
 #TitlePane {
     -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, -fx-color-secondary, -fx-color-primary);
+}
+
+/* ################################################################################################################## */
+
+/*                                                        BAN                                                         */
+
+/* ################################################################################################################## */
+
+#m_RedTeamHBox .jfx-button{
+    -fx-background-radius:0;
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, -fx-color-red, -fx-color-background);
+    -fx-border-width: 3 3 3 3;
+    -fx-background-insets: 0;
+}
+
+#m_BlueTeamHBox .jfx-button{
+    -fx-background-radius:0;
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, -fx-color-blue, -fx-color-background);
+    -fx-border-width: 3 3 3 3;
+    -fx-background-insets: 0;
 }
