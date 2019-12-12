@@ -8,6 +8,6 @@ input="../src/main/resources/data/list.txt"
 while IFS= read -r line
 do
         echo "Downloading $line"  
-        download ${line}
+        download ${li`  ne}
 done < "$input"
 
