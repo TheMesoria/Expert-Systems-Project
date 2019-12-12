@@ -91,27 +91,27 @@
                </children></VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXButton fx:id="m_RedTeamPickButton_15" prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+                  <JFXButton fx:id="m_BlueTeamPickButton_1" prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXButton fx:id="m_RedTeamPickButton_111" prefHeight="100.0" prefWidth="100.0" />
+                  <JFXButton fx:id="m_BlueTeamPickButton_2" prefHeight="100.0" prefWidth="100.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXButton fx:id="m_RedTeamPickButton_121" prefHeight="100.0" prefWidth="100.0" />
+                  <JFXButton fx:id="m_BlueTeamPickButton_3" prefHeight="100.0" prefWidth="100.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXButton fx:id="m_RedTeamPickButton_131" prefHeight="100.0" prefWidth="100.0" />
+                  <JFXButton fx:id="m_BlueTeamPickButton_4" prefHeight="100.0" prefWidth="100.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXButton fx:id="m_RedTeamPickButton_141" prefHeight="100.0" prefWidth="100.0" />
+                  <JFXButton fx:id="m_BlueTeamPickButton_5" prefHeight="100.0" prefWidth="100.0" />
                </children>
             </VBox>
 			</children>
