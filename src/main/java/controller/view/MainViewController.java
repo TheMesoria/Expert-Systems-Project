@@ -3,6 +3,7 @@ package controller.view;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
 import com.jfoenix.controls.JFXDialogLayout;
+import controller.manager.ViewStorage;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
@@ -57,7 +58,7 @@ public class MainViewController
         {
             var content = new JFXDialogLayout();
             content.setHeading(new Text("Choose champion"));
-            content.setBody(new AnchorPane(new JFXButton("Click me")));
+            content.setBody(ViewStorage.getInstance().getChampionPickerView());
 
             m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
             m_ChampionPickDialog.setContent(content);

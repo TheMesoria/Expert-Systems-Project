@@ -1,3 +1,4 @@
+import controller.manager.ViewStorage;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -15,24 +16,7 @@ public class Main
     @Override
     public void start(Stage primaryStage)
     {
-        try
-        {
-            var root = (Parent) FXMLLoader.load(getClass().getResource("view/MainView.fxml"));
-
-            var scene = new Scene(root, 1000, 800);
-            scene.getStylesheets().add(getClass().getResource("styles/Dark.css").toExternalForm());
-
-            primaryStage.setTitle("Hello World!");
-            primaryStage.setScene(scene);
-            primaryStage.sizeToScene();
-            primaryStage.show();
-            primaryStage.setMinWidth(primaryStage.getWidth());
-            primaryStage.setMinHeight(primaryStage.getHeight());
-        }
-        catch (IOException e)
-        {
-            System.out.println("Exception happened: " + e.getMessage());
-        }
+        ViewStorage.getInstance().initialise(primaryStage);
     }
 
     public static void main(String[] args)
