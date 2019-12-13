@@ -2,11 +2,14 @@ package controller.view;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -48,18 +51,18 @@ public class MainViewController
     @Override public void initialize(URL url,
                                      ResourceBundle resourceBundle)
     {
-        // m_LayoutStackPane.getChildren().remove(m_ChampionPickDialog);
-        //
-        // m_BlueBanButton_1.setOnMouseClicked(e ->
-        // {
-        //     var content = new JFXDialogLayout();
-        //     content.setHeading(new Text("Choose champion"));
-        //     content.setBody(new AnchorPane(new JFXButton("Click me")));
-        //
-        //     m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
-        //     m_ChampionPickDialog.setContent(content);
-        //     m_ChampionPickDialog.setDialogContainer(m_LayoutStackPane);
-        //     m_ChampionPickDialog.show();
-        // });
+        m_LayoutStackPane.getChildren().remove(m_ChampionPickDialog);
+
+        m_BlueBanButton_1.setOnMouseClicked(e ->
+        {
+            var content = new JFXDialogLayout();
+            content.setHeading(new Text("Choose champion"));
+            content.setBody(new AnchorPane(new JFXButton("Click me")));
+
+            m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
+            m_ChampionPickDialog.setContent(content);
+            m_ChampionPickDialog.setDialogContainer(m_LayoutStackPane);
+            m_ChampionPickDialog.show();
+        });
     }
 }

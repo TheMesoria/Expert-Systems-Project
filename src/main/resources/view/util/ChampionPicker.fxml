@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="m_ChooseChampionBox" minHeight="400.0" minWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.util.ChampionPicker">
+   <top>
+      <JFXTextField fx:id="m_ChampionNameTextBox" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <JFXMasonryPane fx:id="m_ChampionPool" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
