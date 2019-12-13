@@ -24,7 +24,10 @@ public class Main
 
             primaryStage.setTitle("Hello World!");
             primaryStage.setScene(scene);
+            primaryStage.sizeToScene();
             primaryStage.show();
+            primaryStage.setMinWidth(primaryStage.getWidth());
+            primaryStage.setMinHeight(primaryStage.getHeight());
         }
         catch (IOException e)
         {

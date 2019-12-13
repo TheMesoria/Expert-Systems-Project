@@ -7,20 +7,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <StackPane fx:id="m_LayoutStackPane"
-		   prefWidth="913.0"
+		   minHeight="600.0"
+		   minWidth="800.0"
 		   xmlns="http://javafx.com/javafx/11.0.1"
 		   xmlns:fx="http://javafx.com/fxml/1"
 		   fx:controller="controller.view.MainViewController">
 	<children>
-		<VBox alignment="CENTER"
-			  maxHeight="-Infinity"
-			  maxWidth="-Infinity"
-			  minHeight="-Infinity"
-			  minWidth="-Infinity"
-			  prefHeight="600.0"
-			  prefWidth="800.0">
+		<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
 			<children>
 				<HBox fx:id="m_RedTeamHBox" prefHeight="100.0" prefWidth="200.0">
 					<children>
@@ -31,6 +25,8 @@
 							  HBox.hgrow="ALWAYS">
 							<children>
 								<JFXButton fx:id="m_RedBanButton_1"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -41,6 +37,8 @@
 								<JFXButton fx:id="m_RedBanButton_2"
 										   layoutX="10.0"
 										   layoutY="10.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -51,6 +49,8 @@
 								<JFXButton fx:id="m_RedBanButton_3"
 										   layoutX="10.0"
 										   layoutY="10.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -61,6 +61,8 @@
 								<JFXButton fx:id="m_RedBanButton_4"
 										   layoutX="10.0"
 										   layoutY="62.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -71,6 +73,8 @@
 								<JFXButton fx:id="m_RedBanButton_5"
 										   layoutX="10.0"
 										   layoutY="88.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -144,6 +148,8 @@
 							  HBox.hgrow="ALWAYS">
 							<children>
 								<JFXButton fx:id="m_BlueBanButton_1"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -154,6 +160,8 @@
 								<JFXButton fx:id="m_BlueBanButton_2"
 										   layoutX="10.0"
 										   layoutY="10.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -164,6 +172,8 @@
 								<JFXButton fx:id="m_BlueBanButton_3"
 										   layoutX="10.0"
 										   layoutY="60.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -174,6 +184,8 @@
 								<JFXButton fx:id="m_BlueBanButton_4"
 										   layoutX="10.0"
 										   layoutY="110.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
@@ -184,6 +196,8 @@
 								<JFXButton fx:id="m_BlueBanButton_5"
 										   layoutX="10.0"
 										   layoutY="160.0"
+										   minHeight="50.0"
+										   minWidth="50.0"
 										   prefHeight="50.0"
 										   prefWidth="50.0"
 										   VBox.vgrow="ALWAYS">
