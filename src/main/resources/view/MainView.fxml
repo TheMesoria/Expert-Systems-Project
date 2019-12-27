@@ -7,238 +7,128 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane fx:id="m_LayoutStackPane"
-		   minHeight="600.0"
-		   minWidth="800.0"
-		   xmlns="http://javafx.com/javafx/11.0.1"
-		   xmlns:fx="http://javafx.com/fxml/1"
-		   fx:controller="controller.view.MainViewController">
+<StackPane fx:id="m_LayoutStackPane" minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.MainViewController">
 	<children>
 		<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
 			<children>
 				<HBox fx:id="m_RedTeamHBox" prefHeight="100.0" prefWidth="200.0">
 					<children>
-						<VBox fx:id="m_RedTeamBanVBox"
-							  alignment="CENTER"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox fx:id="m_RedTeamBanVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedBanButton_1"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_RedBanButton_1" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_RedBanButton_2"
-										   layoutX="10.0"
-										   layoutY="10.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_RedBanButton_2" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_RedBanButton_3"
-										   layoutX="10.0"
-										   layoutY="10.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_RedBanButton_3" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_RedBanButton_4"
-										   layoutX="10.0"
-										   layoutY="62.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_RedBanButton_4" layoutX="10.0" layoutY="62.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_RedBanButton_5"
-										   layoutX="10.0"
-										   layoutY="88.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_RedBanButton_5" layoutX="10.0" layoutY="88.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
 							</children>
 						</VBox>
-						<VBox alignment="CENTER"
-							  layoutX="10.0"
-							  layoutY="10.0"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedTeamPickButton_1"
-										   prefHeight="100.0"
-										   prefWidth="100.0"
-										   VBox.vgrow="ALWAYS"/>
+								<JFXButton fx:id="m_RedTeamPickButton_1" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
 							</children>
 						</VBox>
-						<VBox alignment="CENTER"
-							  layoutX="510.0"
-							  layoutY="10.0"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox alignment="CENTER" layoutX="510.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedTeamPickButton_11" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_RedTeamPickButton_11" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
-						<VBox alignment="CENTER"
-							  layoutX="510.0"
-							  layoutY="10.0"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox alignment="CENTER" layoutX="510.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedTeamPickButton_12" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_RedTeamPickButton_12" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
-						<VBox alignment="CENTER"
-							  layoutX="510.0"
-							  layoutY="10.0"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox alignment="CENTER" layoutX="510.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedTeamPickButton_13" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_RedTeamPickButton_13" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
-						<VBox alignment="CENTER"
-							  layoutX="310.0"
-							  layoutY="10.0"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_RedTeamPickButton_14" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_RedTeamPickButton_14" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
 					</children>
 				</HBox>
 				<HBox fx:id="m_BlueTeamHBox" prefHeight="100.0" prefWidth="200.0">
 					<children>
-						<VBox fx:id="m_BlueTeamBanVBox"
-							  alignment="CENTER"
-							  prefHeight="200.0"
-							  prefWidth="100.0"
-							  HBox.hgrow="ALWAYS">
+						<VBox fx:id="m_BlueTeamBanVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueBanButton_1"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_BlueBanButton_1" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_BlueBanButton_2"
-										   layoutX="10.0"
-										   layoutY="10.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_BlueBanButton_2" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_BlueBanButton_3"
-										   layoutX="10.0"
-										   layoutY="60.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_BlueBanButton_3" layoutX="10.0" layoutY="60.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_BlueBanButton_4"
-										   layoutX="10.0"
-										   layoutY="110.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_BlueBanButton_4" layoutX="10.0" layoutY="110.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
-								<JFXButton fx:id="m_BlueBanButton_5"
-										   layoutX="10.0"
-										   layoutY="160.0"
-										   minHeight="50.0"
-										   minWidth="50.0"
-										   prefHeight="50.0"
-										   prefWidth="50.0"
-										   VBox.vgrow="ALWAYS">
+								<JFXButton fx:id="m_BlueBanButton_5" layoutX="10.0" layoutY="160.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#onMouseClicked" prefHeight="50.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
 									<VBox.margin>
-										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 									</VBox.margin>
 								</JFXButton>
 							</children>
 						</VBox>
 						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueTeamPickButton_1"
-										   prefHeight="100.0"
-										   prefWidth="100.0"
-										   VBox.vgrow="ALWAYS"/>
+								<JFXButton fx:id="m_BlueTeamPickButton_1" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
 							</children>
 						</VBox>
 						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueTeamPickButton_2" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_BlueTeamPickButton_2" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
 						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueTeamPickButton_3" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_BlueTeamPickButton_3" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
 						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueTeamPickButton_4" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_BlueTeamPickButton_4" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
 						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
 							<children>
-								<JFXButton fx:id="m_BlueTeamPickButton_5" prefHeight="100.0" prefWidth="100.0"/>
+								<JFXButton fx:id="m_BlueTeamPickButton_5" onMouseClicked="#onMouseClicked" prefHeight="100.0" prefWidth="100.0" />
 							</children>
 						</VBox>
 					</children>
 				</HBox>
 			</children>
 		</VBox>
-		<JFXDialog fx:id="m_ChampionPickDialog"/>
+		<JFXDialog fx:id="m_ChampionPickDialog" />
 	</children>
 </StackPane>

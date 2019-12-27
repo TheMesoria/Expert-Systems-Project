@@ -4,8 +4,10 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
 import com.jfoenix.controls.JFXDialogLayout;
 import controller.manager.ViewStorage;
+import controller.view.util.ChampionPicker;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -54,16 +56,21 @@ public class MainViewController
     {
         m_LayoutStackPane.getChildren().remove(m_ChampionPickDialog);
 
-        m_BlueBanButton_1.setOnMouseClicked(e ->
-        {
-            var content = new JFXDialogLayout();
-            content.setHeading(new Text("Choose champion"));
-            content.setBody(ViewStorage.getInstance().getChampionPickerView());
+        var content = new JFXDialogLayout();
+        content.setHeading(new Text("Choose champion"));
+        content.setBody(ViewStorage.getInstance().getChampionPickerView());
 
-            m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
-            m_ChampionPickDialog.setContent(content);
-            m_ChampionPickDialog.setDialogContainer(m_LayoutStackPane);
-            m_ChampionPickDialog.show();
-        });
+        m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
+        m_ChampionPickDialog.setContent(content);
+        m_ChampionPickDialog.setDialogContainer(m_LayoutStackPane);
+    }
+
+
+    @FXML
+    private void onMouseClicked(MouseEvent mouseEvent)
+    {
+        ChampionPicker cpController = ViewStorage.getInstance().getChampionPickerFxmlLoader().getController();
+        cpController.clearChampionNameTextBox();
+        m_ChampionPickDialog.show();
     }
 }
