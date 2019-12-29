@@ -1,6 +1,7 @@
 [
   {
     "id": "aatrox",
+    "type": "teamfight",
     "key": "266",
     "name": "Aatrox",
     "title": "the Darkin Blade",
@@ -40,6 +41,7 @@
   },
   {
     "id": "ahri",
+    "type": "pick",
     "key": "103",
     "name": "Ahri",
     "title": "the Nine-Tailed Fox",
@@ -79,6 +81,7 @@
   },
   {
     "id": "akali",
+    "type": "pick",
     "key": "84",
     "name": "Akali",
     "title": "the Fist of Shadow",
@@ -117,6 +120,7 @@
   },
   {
     "id": "alistar",
+    "type": "teamfight",
     "key": "12",
     "name": "Alistar",
     "title": "the Minotaur",
@@ -156,6 +160,7 @@
   },
   {
     "id": "amumu",
+    "type": "teamfight",
     "key": "32",
     "name": "Amumu",
     "title": "the Sad Mummy",
@@ -195,6 +200,7 @@
   },
   {
     "id": "anivia",
+    "type": "siege",
     "key": "34",
     "name": "Anivia",
     "title": "the Cryophoenix",
@@ -234,6 +240,7 @@
   },
   {
     "id": "annie",
+    "type": "teamfight",
     "key": "1",
     "name": "Annie",
     "title": "the Dark Child",
@@ -272,6 +279,7 @@
   },
   {
     "id": "ashe",
+    "type": "siege",
     "key": "22",
     "name": "Ashe",
     "title": "the Frost Archer",
@@ -311,6 +319,7 @@
   },
   {
     "id": "aurelionsol",
+    "type": "flex",
     "key": "136",
     "name": "Aurelion Sol",
     "title": "The Star Forger",
@@ -350,6 +359,7 @@
   },
   {
     "id": "azir",
+    "type": "siege",
     "key": "268",
     "name": "Azir",
     "title": "the Emperor of the Sands",
@@ -389,6 +399,7 @@
   },
   {
     "id": "bard",
+    "type": "pick",
     "key": "432",
     "name": "Bard",
     "title": "the Wandering Caretaker",
@@ -428,6 +439,7 @@
   },
   {
     "id": "blitzcrank",
+    "type": "pick",
     "key": "53",
     "name": "Blitzcrank",
     "title": "the Great Steam Golem",
@@ -467,6 +479,7 @@
   },
   {
     "id": "brand",
+    "type": "teamfight",
     "key": "63",
     "name": "Brand",
     "title": "the Burning Vengeance",
@@ -505,6 +518,7 @@
   },
   {
     "id": "braum",
+    "type": "control",
     "key": "201",
     "name": "Braum",
     "title": "the Heart of the Freljord",
@@ -544,6 +558,7 @@
   },
   {
     "id": "caitlyn",
+    "type": "siege",
     "key": "51",
     "name": "Caitlyn",
     "title": "the Sheriff of Piltover",
@@ -582,6 +597,7 @@
   },
   {
     "id": "camille",
+    "type": "splitpush",
     "key": "164",
     "name": "Camille",
     "title": "the Steel Shadow",
@@ -621,6 +637,7 @@
   },
   {
     "id": "cassiopeia",
+    "type": "teamfight",
     "key": "69",
     "name": "Cassiopeia",
     "title": "the Serpent's Embrace",
@@ -659,6 +676,7 @@
   },
   {
     "id": "chogath",
+    "type": "control",
     "key": "31",
     "name": "Cho'Gath",
     "title": "the Terror of the Void",
@@ -698,6 +716,7 @@
   },
   {
     "id": "corki",
+    "type": "siege",
     "key": "42",
     "name": "Corki",
     "title": "the Daring Bombardier",
@@ -736,6 +755,7 @@
   },
   {
     "id": "darius",
+    "type": "teamfight",
     "key": "122",
     "name": "Darius",
     "title": "the Hand of Noxus",
@@ -775,6 +795,7 @@
   },
   {
     "id": "diana",
+    "type": "pick",
     "key": "131",
     "name": "Diana",
     "title": "Scorn of the Moon",
@@ -814,6 +835,7 @@
   },
   {
     "id": "draven",
+    "type": "flex",
     "key": "119",
     "name": "Draven",
     "title": "the Glorious Executioner",
@@ -852,6 +874,7 @@
   },
   {
     "id": "drmundo",
+    "type": "teamfight",
     "key": "36",
     "name": "Dr. Mundo",
     "title": "the Madman of Zaun",
@@ -891,6 +914,7 @@
   },
   {
     "id": "ekko",
+    "type": "pick",
     "key": "245",
     "name": "Ekko",
     "title": "the Boy Who Shattered Time",
@@ -930,6 +954,7 @@
   },
   {
     "id": "elise",
+    "type": "pick",
     "key": "60",
     "name": "Elise",
     "title": "the Spider Queen",
@@ -969,6 +994,7 @@
   },
   {
     "id": "evelynn",
+    "type": "pick",
     "key": "28",
     "name": "Evelynn",
     "title": "Agony's Embrace",
@@ -1008,6 +1034,7 @@
   },
   {
     "id": "ezreal",
+    "type": "control",
     "key": "81",
     "name": "Ezreal",
     "title": "the Prodigal Explorer",
@@ -1047,6 +1074,7 @@
   },
   {
     "id": "fiddlesticks",
+    "type": "control",
     "key": "9",
     "name": "Fiddlesticks",
     "title": "the Harbinger of Doom",
@@ -1086,6 +1114,7 @@
   },
   {
     "id": "fiora",
+    "type": "splitpush",
     "key": "114",
     "name": "Fiora",
     "title": "the Grand Duelist",
@@ -1125,6 +1154,7 @@
   },
   {
     "id": "fizz",
+    "type": "pick",
     "key": "105",
     "name": "Fizz",
     "title": "the Tidal Trickster",
@@ -1164,6 +1194,7 @@
   },
   {
     "id": "galio",
+    "type": "teamfight",
     "key": "3",
     "name": "Galio",
     "title": "the Colossus",
@@ -1203,6 +1234,7 @@
   },
   {
     "id": "gangplank",
+    "type": "teamfight",
     "key": "41",
     "name": "Gangplank",
     "title": "the Saltwater Scourge",
@@ -1241,6 +1273,7 @@
   },
   {
     "id": "garen",
+    "type": "splitpush",
     "key": "86",
     "name": "Garen",
     "title": "The Might of Demacia",
@@ -1280,6 +1313,7 @@
   },
   {
     "id": "gnar",
+    "type": "splitpush",
     "key": "150",
     "name": "Gnar",
     "title": "the Missing Link",
@@ -1319,6 +1353,7 @@
   },
   {
     "id": "gragas",
+    "type": "teamfight",
     "key": "79",
     "name": "Gragas",
     "title": "the Rabble Rouser",
@@ -1358,6 +1393,7 @@
   },
   {
     "id": "graves",
+    "type": "flex",
     "key": "104",
     "name": "Graves",
     "title": "the Outlaw",
@@ -1396,6 +1432,7 @@
   },
   {
     "id": "hecarim",
+    "type": "teamfight",
     "key": "120",
     "name": "Hecarim",
     "title": "the Shadow of War",
@@ -1435,6 +1472,7 @@
   },
   {
     "id": "heimerdinger",
+    "type": "siege",
     "key": "74",
     "name": "Heimerdinger",
     "title": "the Revered Inventor",
@@ -1474,6 +1512,7 @@
   },
   {
     "id": "illaoi",
+    "type": "splitpush",
     "key": "420",
     "name": "Illaoi",
     "title": "the Kraken Priestess",
@@ -1513,6 +1552,7 @@
   },
   {
     "id": "irelia",
+    "type": "splitpush",
     "key": "39",
     "name": "Irelia",
     "title": "the Blade Dancer",
@@ -1552,6 +1592,7 @@
   },
   {
     "id": "ivern",
+    "type": "control",
     "key": "427",
     "name": "Ivern",
     "title": "the Green Father",
@@ -1591,6 +1632,7 @@
   },
   {
     "id": "janna",
+    "type": "control",
     "key": "40",
     "name": "Janna",
     "title": "the Storm's Fury",
@@ -1630,6 +1672,7 @@
   },
   {
     "id": "jarvaniv",
+    "type": "flex",
     "key": "59",
     "name": "Jarvan IV",
     "title": "the Exemplar of Demacia",
@@ -1669,6 +1712,7 @@
   },
   {
     "id": "jax",
+    "type": "splitpush",
     "key": "24",
     "name": "Jax",
     "title": "Grandmaster at Arms",
@@ -1708,6 +1752,7 @@
   },
   {
     "id": "jayce",
+    "type": "siege",
     "key": "126",
     "name": "Jayce",
     "title": "the Defender of Tomorrow",
@@ -1747,6 +1792,7 @@
   },
   {
     "id": "jhin",
+    "type": "siege",
     "key": "202",
     "name": "Jhin",
     "title": "the Virtuoso",
@@ -1786,6 +1832,7 @@
   },
   {
     "id": "jinx",
+    "type": "control",
     "key": "222",
     "name": "Jinx",
     "title": "the Loose Cannon",
@@ -1824,6 +1871,7 @@
   },
   {
     "id": "kaisa",
+    "type": "control",
     "key": "145",
     "name": "Kai'Sa",
     "title": "Daughter of the Void",
@@ -1862,6 +1910,7 @@
   },
   {
     "id": "kalista",
+    "type": "control",
     "key": "429",
     "name": "Kalista",
     "title": "the Spear of Vengeance",
@@ -1900,6 +1949,7 @@
   },
   {
     "id": "karma",
+    "type": "siege",
     "key": "43",
     "name": "Karma",
     "title": "the Enlightened One",
@@ -1939,6 +1989,7 @@
   },
   {
     "id": "karthus",
+    "type": "teamfight",
     "key": "30",
     "name": "Karthus",
     "title": "the Deathsinger",
@@ -1977,6 +2028,7 @@
   },
   {
     "id": "kassadin",
+    "type": "splitpush",
     "key": "38",
     "name": "Kassadin",
     "title": "the Void Walker",
@@ -2016,6 +2068,7 @@
   },
   {
     "id": "katarina",
+    "type": "teamfight",
     "key": "55",
     "name": "Katarina",
     "title": "the Sinister Blade",
@@ -2055,6 +2108,7 @@
   },
   {
     "id": "kayle",
+    "type": "control",
     "key": "10",
     "name": "Kayle",
     "title": "The Judicator",
@@ -2094,6 +2148,7 @@
   },
   {
     "id": "kayn",
+    "type": "splitpush",
     "key": "141",
     "name": "Kayn",
     "title": "the Shadow Reaper",
@@ -2133,6 +2188,7 @@
   },
   {
     "id": "kennen",
+    "type": "teamfight",
     "key": "85",
     "name": "Kennen",
     "title": "the Heart of the Tempest",
@@ -2172,6 +2228,7 @@
   },
   {
     "id": "khazix",
+    "type": "pick",
     "key": "121",
     "name": "Kha'Zix",
     "title": "the Voidreaver",
@@ -2211,6 +2268,7 @@
   },
   {
     "id": "kindred",
+    "type": "control",
     "key": "203",
     "name": "Kindred",
     "title": "The Eternal Hunters",
@@ -2249,6 +2307,7 @@
   },
   {
     "id": "kled",
+    "type": "splitpush",
     "key": "240",
     "name": "Kled",
     "title": "the Cantankerous Cavalier",
@@ -2288,6 +2347,7 @@
   },
   {
     "id": "kogmaw",
+    "type": "control",
     "key": "96",
     "name": "Kog'Maw",
     "title": "the Mouth of the Abyss",
@@ -2327,6 +2387,7 @@
   },
   {
     "id": "leblanc",
+    "type": "pick",
     "key": "7",
     "name": "LeBlanc",
     "title": "the Deceiver",
@@ -2366,6 +2427,7 @@
   },
   {
     "id": "leesin",
+    "type": "flex",
     "key": "64",
     "name": "Lee Sin",
     "title": "the Blind Monk",
@@ -2405,6 +2467,7 @@
   },
   {
     "id": "leona",
+    "type": "teamfight",
     "key": "89",
     "name": "Leona",
     "title": "the Radiant Dawn",
@@ -2444,6 +2507,7 @@
   },
   {
     "id": "lissandra",
+    "type": "control",
     "key": "127",
     "name": "Lissandra",
     "title": "the Ice Witch",
@@ -2482,6 +2546,7 @@
   },
   {
     "id": "lucian",
+    "type": "flex",
     "key": "236",
     "name": "Lucian",
     "title": "the Purifier",
@@ -2520,6 +2585,7 @@
   },
   {
     "id": "lulu",
+    "type": "siege",
     "key": "117",
     "name": "Lulu",
     "title": "the Fae Sorceress",
@@ -2559,6 +2625,7 @@
   },
   {
     "id": "lux",
+    "type": "siege",
     "key": "99",
     "name": "Lux",
     "title": "the Lady of Luminosity",
@@ -2598,6 +2665,7 @@
   },
   {
     "id": "malphite",
+    "type": "teamfight",
     "key": "54",
     "name": "Malphite",
     "title": "Shard of the Monolith",
@@ -2637,6 +2705,7 @@
   },
   {
     "id": "malzahar",
+    "type": "siege",
     "key": "90",
     "name": "Malzahar",
     "title": "the Prophet of the Void",
@@ -2676,6 +2745,7 @@
   },
   {
     "id": "maokai",
+    "type": "teamfight",
     "key": "57",
     "name": "Maokai",
     "title": "the Twisted Treant",
@@ -2715,6 +2785,7 @@
   },
   {
     "id": "masteryi",
+    "type": "splitpush",
     "key": "11",
     "name": "Master Yi",
     "title": "the Wuju Bladesman",
@@ -2754,6 +2825,7 @@
   },
   {
     "id": "missfortune",
+    "type": "teamfight",
     "key": "21",
     "name": "Miss Fortune",
     "title": "the Bounty Hunter",
@@ -2792,6 +2864,7 @@
   },
   {
     "id": "monkeyking",
+    "type": "teamfight",
     "key": "62",
     "name": "Wukong",
     "title": "the Monkey King",
@@ -2831,6 +2904,7 @@
   },
   {
     "id": "mordekaiser",
+    "type": "teamgfight",
     "key": "82",
     "name": "Mordekaiser",
     "title": "the Iron Revenant",
@@ -2869,6 +2943,7 @@
   },
   {
     "id": "morgana",
+    "type": "pick",
     "key": "25",
     "name": "Morgana",
     "title": "Fallen Angel",
@@ -2908,6 +2983,7 @@
   },
   {
     "id": "nami",
+    "type": "control",
     "key": "267",
     "name": "Nami",
     "title": "the Tidecaller",
@@ -2947,6 +3023,7 @@
   },
   {
     "id": "nasus",
+    "type": "splitpush",
     "key": "75",
     "name": "Nasus",
     "title": "the Curator of the Sands",
@@ -2986,6 +3063,7 @@
   },
   {
     "id": "nautilus",
+    "type": "pick",
     "key": "111",
     "name": "Nautilus",
     "title": "the Titan of the Depths",
@@ -3025,6 +3103,7 @@
   },
   {
     "id": "nidalee",
+    "type": "pick",
     "key": "76",
     "name": "Nidalee",
     "title": "the Bestial Huntress",
@@ -3064,6 +3143,7 @@
   },
   {
     "id": "nocturne",
+    "type": "pick",
     "key": "56",
     "name": "Nocturne",
     "title": "the Eternal Nightmare",
@@ -3103,6 +3183,7 @@
   },
   {
     "id": "nunu",
+    "type": "control",
     "key": "20",
     "name": "Nunu",
     "title": "the Yeti Rider",
@@ -3142,6 +3223,7 @@
   },
   {
     "id": "olaf",
+    "type": "splitpush",
     "key": "2",
     "name": "Olaf",
     "title": "the Berserker",
@@ -3181,6 +3263,7 @@
   },
   {
     "id": "orianna",
+    "type": "control",
     "key": "61",
     "name": "Orianna",
     "title": "the Lady of Clockwork",
@@ -3220,6 +3303,7 @@
   },
   {
     "id": "ornn",
+    "type": "teamfight",
     "key": "516",
     "name": "Ornn",
     "title": "The Fire below the Mountain",
@@ -3259,6 +3343,7 @@
   },
   {
     "id": "pantheon",
+    "type": "pick",
     "key": "80",
     "name": "Pantheon",
     "title": "the Artisan of War",
@@ -3298,6 +3383,7 @@
   },
   {
     "id": "poppy",
+    "type": "control",
     "key": "78",
     "name": "Poppy",
     "title": "Keeper of the Hammer",
@@ -3337,6 +3423,7 @@
   },
   {
     "id": "pyke",
+    "type": "pick",
     "key": "555",
     "name": "Pyke",
     "title": "the Bloodharbor Ripper",
@@ -3376,6 +3463,7 @@
   },
   {
     "id": "quinn",
+    "type": "pick",
     "key": "133",
     "name": "Quinn",
     "title": "Demacia's Wings",
@@ -3415,6 +3503,7 @@
   },
   {
     "id": "rakan",
+    "type": "control",
     "key": "497",
     "name": "Rakan",
     "title": "The Charmer",
@@ -3453,6 +3542,7 @@
   },
   {
     "id": "rammus",
+    "type": "pick",
     "key": "33",
     "name": "Rammus",
     "title": "the Armordillo",
@@ -3492,6 +3582,7 @@
   },
   {
     "id": "reksai",
+    "type": "pick",
     "key": "421",
     "name": "Rek'Sai",
     "title": "the Void Burrower",
@@ -3530,6 +3621,7 @@
   },
   {
     "id": "renekton",
+    "type": "teamfight",
     "key": "58",
     "name": "Renekton",
     "title": "the Butcher of the Sands",
@@ -3569,6 +3661,7 @@
   },
   {
     "id": "rengar",
+    "type": "pick",
     "key": "107",
     "name": "Rengar",
     "title": "the Pridestalker",
@@ -3608,6 +3701,7 @@
   },
   {
     "id": "riven",
+    "type": "splitpush",
     "key": "92",
     "name": "Riven",
     "title": "the Exile",
@@ -3647,6 +3741,7 @@
   },
   {
     "id": "rumble",
+    "type": "teamfight",
     "key": "68",
     "name": "Rumble",
     "title": "the Mechanized Menace",
@@ -3686,6 +3781,7 @@
   },
   {
     "id": "ryze",
+    "type": "flex",
     "key": "13",
     "name": "Ryze",
     "title": "the Rune Mage",
@@ -3725,6 +3821,7 @@
   },
   {
     "id": "sejuani",
+    "type": "teamfight",
     "key": "113",
     "name": "Sejuani",
     "title": "Fury of the North",
@@ -3764,6 +3861,7 @@
   },
   {
     "id": "shaco",
+    "type": "pick",
     "key": "35",
     "name": "Shaco",
     "title": "the Demon Jester",
@@ -3802,6 +3900,7 @@
   },
   {
     "id": "shen",
+    "type": "splitpush",
     "key": "98",
     "name": "Shen",
     "title": "the Eye of Twilight",
@@ -3840,6 +3939,7 @@
   },
   {
     "id": "shyvana",
+    "type": "splitpush",
     "key": "102",
     "name": "Shyvana",
     "title": "the Half-Dragon",
@@ -3879,6 +3979,7 @@
   },
   {
     "id": "singed",
+    "type": "teamfight",
     "key": "27",
     "name": "Singed",
     "title": "the Mad Chemist",
@@ -3918,6 +4019,7 @@
   },
   {
     "id": "sion",
+    "type": "teamfight",
     "key": "14",
     "name": "Sion",
     "title": "The Undead Juggernaut",
@@ -3957,6 +4059,7 @@
   },
   {
     "id": "sivir",
+    "type": "siege",
     "key": "15",
     "name": "Sivir",
     "title": "the Battle Mistress",
@@ -3995,6 +4098,7 @@
   },
   {
     "id": "skarner",
+    "type": "pick",
     "key": "72",
     "name": "Skarner",
     "title": "the Crystal Vanguard",
@@ -4034,6 +4138,7 @@
   },
   {
     "id": "sona",
+    "type": "siege",
     "key": "37",
     "name": "Sona",
     "title": "Maven of the Strings",
@@ -4073,6 +4178,7 @@
   },
   {
     "id": "soraka",
+    "type": "control",
     "key": "16",
     "name": "Soraka",
     "title": "the Starchild",
@@ -4112,6 +4218,7 @@
   },
   {
     "id": "swain",
+    "type": "control",
     "key": "50",
     "name": "Swain",
     "title": "the Noxian Grand General",
@@ -4151,6 +4258,7 @@
   },
   {
     "id": "syndra",
+    "type": "siege",
     "key": "134",
     "name": "Syndra",
     "title": "the Dark Sovereign",
@@ -4190,6 +4298,7 @@
   },
   {
     "id": "tahmkench",
+    "type": "control",
     "key": "223",
     "name": "Tahm Kench",
     "title": "the River King",
@@ -4229,6 +4338,7 @@
   },
   {
     "id": "taliyah",
+    "type": "pick",
     "key": "163",
     "name": "Taliyah",
     "title": "the Stoneweaver",
@@ -4268,6 +4378,7 @@
   },
   {
     "id": "talon",
+    "type": "pick",
     "key": "91",
     "name": "Talon",
     "title": "the Blade's Shadow",
@@ -4307,6 +4418,7 @@
   },
   {
     "id": "taric",
+    "type": "control",
     "key": "44",
     "name": "Taric",
     "title": "the Shield of Valoran",
@@ -4346,6 +4458,7 @@
   },
   {
     "id": "teemo",
+    "type": "splitpush",
     "key": "17",
     "name": "Teemo",
     "title": "the Swift Scout",
@@ -4385,6 +4498,7 @@
   },
   {
     "id": "thresh",
+    "type": "pick",
     "key": "412",
     "name": "Thresh",
     "title": "the Chain Warden",
@@ -4424,6 +4538,7 @@
   },
   {
     "id": "tristana",
+    "type": "control",
     "key": "18",
     "name": "Tristana",
     "title": "the Yordle Gunner",
@@ -4463,6 +4578,7 @@
   },
   {
     "id": "trundle",
+    "type": "splitpush",
     "key": "48",
     "name": "Trundle",
     "title": "the Troll King",
@@ -4502,6 +4618,7 @@
   },
   {
     "id": "tryndamere",
+    "type": "splitpush",
     "key": "23",
     "name": "Tryndamere",
     "title": "the Barbarian King",
@@ -4541,6 +4658,7 @@
   },
   {
     "id": "twistedfate",
+    "type": "pick",
     "key": "4",
     "name": "Twisted Fate",
     "title": "the Card Master",
@@ -4579,6 +4697,7 @@
   },
   {
     "id": "twitch",
+    "type": "control",
     "key": "29",
     "name": "Twitch",
     "title": "the Plague Rat",
@@ -4618,6 +4737,7 @@
   },
   {
     "id": "udyr",
+    "type": "splitpush",
     "key": "77",
     "name": "Udyr",
     "title": "the Spirit Walker",
@@ -4657,6 +4777,7 @@
   },
   {
     "id": "urgot",
+    "type": "splitpush",
     "key": "6",
     "name": "Urgot",
     "title": "the Dreadnought",
@@ -4696,6 +4817,7 @@
   },
   {
     "id": "varus",
+    "type": "siege",
     "key": "110",
     "name": "Varus",
     "title": "the Arrow of Retribution",
@@ -4735,6 +4857,7 @@
   },
   {
     "id": "vayne",
+    "type": "control",
     "key": "67",
     "name": "Vayne",
     "title": "the Night Hunter",
@@ -4774,6 +4897,7 @@
   },
   {
     "id": "veigar",
+    "type": "siege",
     "key": "45",
     "name": "Veigar",
     "title": "the Tiny Master of Evil",
@@ -4812,6 +4936,7 @@
   },
   {
     "id": "velkoz",
+    "type": "siege",
     "key": "161",
     "name": "Vel'Koz",
     "title": "the Eye of the Void",
@@ -4850,6 +4975,7 @@
   },
   {
     "id": "vi",
+    "type": "pick",
     "key": "254",
     "name": "Vi",
     "title": "the Piltover Enforcer",
@@ -4889,6 +5015,7 @@
   },
   {
     "id": "viktor",
+    "type": "teamfight",
     "key": "112",
     "name": "Viktor",
     "title": "the Machine Herald",
@@ -4927,6 +5054,7 @@
   },
   {
     "id": "vladimir",
+    "type": "teamfight",
     "key": "8",
     "name": "Vladimir",
     "title": "the Crimson Reaper",
@@ -4966,6 +5094,7 @@
   },
   {
     "id": "volibear",
+    "type": "teamfight",
     "key": "106",
     "name": "Volibear",
     "title": "the Thunder's Roar",
@@ -5005,6 +5134,7 @@
   },
   {
     "id": "warwick",
+    "type": "pick",
     "key": "19",
     "name": "Warwick",
     "title": "the Uncaged Wrath of Zaun",
@@ -5044,6 +5174,7 @@
   },
   {
     "id": "xayah",
+    "type": "teamfight",
     "key": "498",
     "name": "Xayah",
     "title": "the Rebel",
@@ -5082,6 +5213,7 @@
   },
   {
     "id": "xerath",
+    "type": "siege",
     "key": "101",
     "name": "Xerath",
     "title": "the Magus Ascendant",
@@ -5121,6 +5253,7 @@
   },
   {
     "id": "xinzhao",
+    "type": "pick",
     "key": "5",
     "name": "Xin Zhao",
     "title": "the Seneschal of Demacia",
@@ -5160,6 +5293,7 @@
   },
   {
     "id": "yasuo",
+    "type": "splitpush",
     "key": "157",
     "name": "Yasuo",
     "title": "the Unforgiven",
@@ -5199,6 +5333,7 @@
   },
   {
     "id": "yorick",
+    "type": "splitpush",
     "key": "83",
     "name": "Yorick",
     "title": "Shepherd of Souls",
@@ -5238,6 +5373,7 @@
   },
   {
     "id": "zac",
+    "type": "teamfight",
     "key": "154",
     "name": "Zac",
     "title": "the Secret Weapon",
@@ -5277,6 +5413,7 @@
   },
   {
     "id": "zed",
+    "type": "splitpush",
     "key": "238",
     "name": "Zed",
     "title": "the Master of Shadows",
@@ -5316,6 +5453,7 @@
   },
   {
     "id": "ziggs",
+    "type": "siege",
     "key": "115",
     "name": "Ziggs",
     "title": "the Hexplosives Expert",
@@ -5354,6 +5492,7 @@
   },
   {
     "id": "zilean",
+    "type": "siege",
     "key": "26",
     "name": "Zilean",
     "title": "the Chronokeeper",
@@ -5393,6 +5532,7 @@
   },
   {
     "id": "zoe",
+    "type": "pick",
     "key": "142",
     "name": "Zoe",
     "title": "the Aspect of Twilight",
@@ -5432,6 +5572,7 @@
   },
   {
     "id": "zyra",
+    "type": "pick",
     "key": "143",
     "name": "Zyra",
     "title": "Rise of the Thorns",
