@@ -1,0 +1,355 @@
+{
+  "Aatrox": {
+    "type": "bruiser",
+    "damage-type": "AD",
+    "range": "melee",
+    "damage": "high",
+    "health": "medium",
+    "tankiness": "low",
+    "game-phase": [
+      "mid"
+    ],
+    "win-condition": "teamfight",
+    "weakness": [
+      "poke",
+      "survivability"
+    ],
+    "strengths": [
+      "all-in",
+      "squishy-killer",
+      "trade"
+    ],
+    "synergies": []
+  },
+  "Ahri": {
+    "type": "assassin",
+    "damage-type": "AP",
+    "range": "medium",
+    "damage": "high",
+    "health": "low",
+    "tankiness": "low",
+    "game-phase": [
+      "mid"
+    ],
+    "win-condition": "pick",
+    "weakness": [
+      "CC",
+      "health"
+    ],
+    "strengths": [
+      "poke",
+      "squishy-killer",
+      "roaming",
+      "true-damage"
+    ],
+    "synergies": []
+  },
+  "Akali": {
+    "type": "assassin",
+    "damage-type": "AP",
+    "range": "low",
+    "damage": "high",
+    "health": "low",
+    "tankiness": "low",
+    "game-phase": [
+      "mid",
+      "late"
+    ],
+    "win-condition": "pick",
+    "weakness": [
+      "CC",
+      "health",
+      "true-vision",
+      "tankiness"
+    ],
+    "strengths": [
+      "poke",
+      "squishy-killer",
+      "roaming",
+      "flank"
+    ],
+    "synergies": []
+  },
+  "Alistar": {
+    "type": "protector",
+    "damage-type": "AP",
+    "range": "low",
+    "damage": "low",
+    "health": "high",
+    "tankiness": "high",
+    "game-phase": [
+      "early",
+      "mid",
+      "late"
+    ],
+    "win-condition": "teamfight",
+    "weakness": [
+      "true-damage",
+      "poke"
+    ],
+    "strengths": [
+      "CC",
+      "AoE-CC",
+      "knock-up",
+      "push-off"
+    ],
+    "synergies": []
+  },
+  "Amumu": {
+    "type": "tank",
+    "damage-type": "AP",
+    "range": "low",
+    "damage": "medium",
+    "health": "high",
+    "tankiness": "high",
+    "game-phase": [
+      "mid",
+      "late"
+    ],
+    "win-condition": "teamfight",
+    "weakness": [
+      "true-damage",
+      "counter-jungle",
+      "poke"
+    ],
+    "strengths": [
+      "CC",
+      "AoE-CC",
+      "push-off"
+    ],
+    "synergies": []
+  },
+  "Anivia": {
+    "type": "ap-carry",
+    "damage-type": "AP",
+    "range": "medium",
+    "damage": "high",
+    "health": "medium",
+    "tankiness": "low",
+    "game-phase": [
+      "late"
+    ],
+    "win-condition": "siege",
+    "weakness": [
+      "flank",
+      "CC"
+    ],
+    "strengths": [
+      "CC",
+      "AoE-CC",
+      "revive"
+    ],
+    "synergies": [
+      "push-off"
+    ]
+  },
+  "Annie": {
+    "type": "ap-carry",
+    "damage-type": "AP",
+    "range": "high",
+    "damage": "nuke",
+    "health": "medium",
+    "tankiness": "low",
+    "game-phase": [
+      "mid"
+    ],
+    "win-condition": "teamfight",
+    "weakness": [
+      "flank",
+      "mr-stack"
+    ],
+    "strengths": [
+      "CC",
+      "AoE-CC",
+      "damage-burst"
+    ],
+    "synergies": [
+      "pull-in"
+    ]
+  },
+  "Aphelios": {
+    "type": "ad-carry",
+    "damage-type": "AD",
+    "range": "normal",
+    "damage": "high",
+    "health": "low",
+    "tankiness": "low",
+    "game-phase": [
+      "mid",
+      "late"
+    ],
+    "win-condition": "teamfight",
+    "weakness": [
+      "damage-burst",
+      "flank",
+      "CC"
+    ],
+    "strengths": [
+    ],
+    "synergies": [
+    ]
+  },
+  "Ashe": {
+    "type": "ad-carry",
+    "damage-type": "AD",
+    "range": "high",
+    "damage": "high",
+    "health": "low",
+    "tankiness": "low",
+    "game-phase": [
+      "mid",
+      "late"
+    ],
+    "win-condition": "siege",
+    "weakness": [
+      "damage-burst",
+      "flank",
+      "CC"
+    ],
+    "strengths": [
+      "slow",
+      "CC",
+      "hard-CC"
+    ],
+    "synergies": [
+    ]
+  },
+  "AurelionSol": {},
+  "Azir": {},
+  "Bard": {},
+  "Blitzcrank": {},
+  "Brand": {},
+  "Braum": {},
+  "Caitlyn": {},
+  "Camille": {},
+  "Cassiopeia": {},
+  "ChoGath": {},
+  "Corki": {},
+  "Darius": {},
+  "Diana": {},
+  "DrMundo": {},
+  "Draven": {},
+  "Ekko": {},
+  "Elise": {},
+  "Evelynn": {},
+  "Ezreal": {},
+  "Fiddlesticks": {},
+  "Fiora": {},
+  "Fizz": {},
+  "Galio": {},
+  "Gangplank": {},
+  "Garen": {},
+  "Gnar": {},
+  "Gragas": {},
+  "Graves": {},
+  "Hecarim": {},
+  "Heimerdinger": {},
+  "Illaoi": {},
+  "Irelia": {},
+  "Ivern": {},
+  "Janna": {},
+  "JarvanIV": {},
+  "Jax": {},
+  "Jayce": {},
+  "Jhin": {},
+  "Jinx": {},
+  "KaiSa": {},
+  "Kalista": {},
+  "Karma": {},
+  "Karthus": {},
+  "Kassadin": {},
+  "Katarina": {},
+  "Kayle": {},
+  "Kayn": {},
+  "Kennen": {},
+  "KhaZix": {},
+  "Kindred": {},
+  "Kled": {},
+  "KogMaw": {},
+  "LeBlanc": {},
+  "LeeSin": {},
+  "Leona": {},
+  "Lissandra": {},
+  "Lucian": {},
+  "Lulu": {},
+  "Lux": {},
+  "Malphite": {},
+  "Malzahar": {},
+  "Maokai": {},
+  "MasterYi": {},
+  "MissFortune": {},
+  "Mordekaiser": {},
+  "Morgana": {},
+  "Nami": {},
+  "Nasus": {},
+  "Nautilus": {},
+  "Neeko": {},
+  "Nidalee": {},
+  "Nocturne": {},
+  "Nunu&Willump": {},
+  "Olaf": {},
+  "Orianna": {},
+  "Ornn": {},
+  "Pantheon": {},
+  "Poppy": {},
+  "Pyke": {},
+  "Qiyana": {},
+  "Quinn": {},
+  "Rakan": {},
+  "Rammus": {},
+  "RekSai": {},
+  "Renekton": {},
+  "Rengar": {},
+  "Riven": {},
+  "Rumble": {},
+  "Ryze": {},
+  "Sejuani": {},
+  "Senna": {},
+  "Shaco": {},
+  "Shen": {},
+  "Shyvana": {},
+  "Singed": {},
+  "Sion": {},
+  "Sivir": {},
+  "Skarner": {},
+  "Sona": {},
+  "Soraka": {},
+  "Swain": {},
+  "Sylas": {},
+  "Syndra": {},
+  "TahmKench": {},
+  "Taliyah": {},
+  "Talon": {},
+  "Taric": {},
+  "Teemo": {},
+  "Thresh": {},
+  "Tristana": {},
+  "Trundle": {},
+  "Tryndamere": {},
+  "TwistedFate": {},
+  "Twitch": {},
+  "Udyr": {},
+  "Urgot": {},
+  "Varus": {},
+  "Vayne": {},
+  "Veigar": {},
+  "VelKoz": {},
+  "Vi": {},
+  "Viktor": {},
+  "Vladimir": {},
+  "Volibear": {},
+  "Warwick": {},
+  "Wukong": {},
+  "Xayah": {},
+  "Xerath": {},
+  "XinZhao": {},
+  "Yasuo": {},
+  "Yorick": {},
+  "Yuumi": {},
+  "Zac": {},
+  "Zed": {},
+  "Ziggs": {},
+  "Zilean": {},
+  "Zoe": {},
+  "Zyra": {}
+}
