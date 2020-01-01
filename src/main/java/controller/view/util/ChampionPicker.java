@@ -6,13 +6,12 @@ import com.jfoenix.controls.JFXMasonryPane;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
+import models.Champion;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class ChampionPicker
         implements Initializable
@@ -21,17 +20,22 @@ public class ChampionPicker
     @FXML private JFXTextField m_ChampionNameTextBox;
     @FXML private JFXMasonryPane m_ChampionPool;
 
-    private ArrayList<Object> m_Champions;
+    private LinkedList<Champion> m_Champions = new LinkedList<>();
 
     @Override public void initialize(URL url,
                                      ResourceBundle resourceBundle)
     {
         try
         {
-            m_Champions =
-                    new ObjectMapper().readValue(getClass().getResource("/data/list.json"), new TypeReference<>() {});
+            var input =
+                    new ObjectMapper().readValue(getClass().getResource("/data/list.json"),
+                            new TypeReference<ArrayList<LinkedHashMap<String, Object>>>() {});
 
-            System.out.println(m_Champions.get(0).getClass().getSimpleName());
+            System.out.println(input.getClass().getSimpleName());
+            for (var champion : (ArrayList<LinkedHashMap<String, Object>>) input)
+            {
+                m_Champions.add(new Champion(champion));
+            }
         }
         catch (IOException e)
         {
