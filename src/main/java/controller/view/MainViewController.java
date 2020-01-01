@@ -70,7 +70,6 @@ public class MainViewController
     private void onMouseClicked(MouseEvent mouseEvent)
     {
         ChampionPicker cpController = ViewStorage.getInstance().getChampionPickerFxmlLoader().getController();
-        cpController.clearChampionNameTextBox();
         m_ChampionPickDialog.show();
     }
 }

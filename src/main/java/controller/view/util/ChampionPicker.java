@@ -49,9 +49,4 @@ public class ChampionPicker
                 }
                                                            );
     }
-
-    public void clearChampionNameTextBox()
-    {
-        // m_ChampionNameTextBox.clear();
-    }
 }
