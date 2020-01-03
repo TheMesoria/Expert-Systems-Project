@@ -4,9 +4,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jfoenix.controls.JFXMasonryPane;
 import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.controls.JFXTreeTableColumn;
+import com.jfoenix.controls.JFXTreeTableView;
+import com.jfoenix.skins.JFXTableColumnHeader;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TreeTableColumn;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import models.Champion;
@@ -20,7 +25,7 @@ public class ChampionPicker
 {
     @FXML private BorderPane m_ChooseChampionBox;
     // @FXML private JFXTextField m_ChampionNameTextBox;
-    @FXML private FlowPane m_ChampionPool;
+    @FXML private JFXTreeTableView<?> m_ChampionPool;
 
     private LinkedList<Champion> m_Champions = new LinkedList<>();
 
@@ -33,7 +38,12 @@ public class ChampionPicker
                     new ObjectMapper().readValue(getClass().getResource("/data/list.json"),
                             new TypeReference<ArrayList<LinkedHashMap<String, Object>>>() {});
 
-            // m_ChampionPool.s
+            TreeTableColumn<ImageView, String> avatarColumn = new JFXTreeTableColumn<>("Avatar");
+            avatarColumn.setPrefWidth(75);
+
+            TreeTableColumn<String, String> nameColumn = new JFXTreeTableColumn<>("Name");
+
+            m_ChampionPool.getColumns().add(avatarColumn);
 
             System.out.println(input.getClass().getSimpleName());
             for (var champion : input)
@@ -57,9 +67,10 @@ public class ChampionPicker
 
     public void addAll()
     {
-        for(var champ : m_Champions)
+        for (var champ : m_Champions)
         {
-            m_ChampionPool.getChildren().add(champ.jfxButton);
+            // m_ChampionPool.getChildren().add(champ.jfxButton);
+            m_ChampionPool.getChildrenUnmodifiable().add(champ.jfxButton);
 
         }
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.FlowPane?>
 
 <BorderPane fx:id="m_ChooseChampionBox" minHeight="400.0" minWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.util.ChampionPicker">
-   <center>
-      <JFXScrollPane BorderPane.alignment="CENTER">
-         <children>
-            <FlowPane fx:id="m_ChampionPool" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </JFXScrollPane>
-   </center>
+   <top>
+      <JFXTextField fx:id="m_ChampionSearchBox" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </JFXTextField>
+   </top>
 </BorderPane>
