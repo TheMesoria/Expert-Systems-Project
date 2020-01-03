@@ -7,11 +7,9 @@ import controller.manager.ViewStorage;
 import controller.view.util.ChampionPicker;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 
 import java.net.URL;
@@ -50,6 +48,7 @@ public class MainViewController
     @FXML private JFXButton m_BlueTeamPickButton_4;
     @FXML private JFXButton m_BlueTeamPickButton_5;
 
+    public JFXButton m_RequestingResource;
 
     @Override public void initialize(URL url,
                                      ResourceBundle resourceBundle)
@@ -70,6 +69,9 @@ public class MainViewController
     private void onMouseClicked(MouseEvent mouseEvent)
     {
         ChampionPicker cpController = ViewStorage.getInstance().getChampionPickerFxmlLoader().getController();
+        m_RequestingResource = (JFXButton) mouseEvent.getSource();
+
+        cpController.addAll();
         m_ChampionPickDialog.show();
     }
 }
