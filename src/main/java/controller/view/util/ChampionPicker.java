@@ -61,16 +61,30 @@ public class ChampionPicker
                 continue;
             }
 
-            var out = FuzzySearch.partialRatio(m_ChampionSearchBox.getText(), (String) champ.data.get("name"));
+            var currentString = m_ChampionSearchBox.getText().toLowerCase();
+            var champName = ((String) champ.data.get("name")).toLowerCase();
 
-            System.out.println("For \"" + champ.data.get("name") + "\" we got: " + out + ".");
-
-            if (out >= 50)
+            if (currentString.length() > champName.length())
             {
-                System.out.println("For \"" + champ.data.get("name") + "\" we got: " + out + ".");
-
-                m_ChampionPool.getChildren().add(champ.jfxButton);
+                continue;
             }
+
+            var match = true;
+            for (var i = 0; i < currentString.length(); i++)
+            {
+                if (currentString.charAt(i) != champName.charAt(i))
+                {
+                    match = false;
+                    break;
+                }
+            }
+
+            if (!match)
+            {
+                continue;
+            }
+
+            m_ChampionPool.getChildren().add(champ.jfxButton);
 
         }
     }
