@@ -12,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 
+import javax.swing.text.View;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -71,7 +72,6 @@ public class MainViewController
         ChampionPicker cpController = ViewStorage.getInstance().getChampionPickerFxmlLoader().getController();
         m_RequestingResource = (JFXButton) mouseEvent.getSource();
 
-        cpController.addAll();
         m_ChampionPickDialog.show();
     }
 }

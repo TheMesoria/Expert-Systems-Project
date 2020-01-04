@@ -2,18 +2,14 @@ package controller.view.util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jfoenix.controls.JFXMasonryPane;
-import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.controls.JFXTreeTableColumn;
-import com.jfoenix.controls.JFXTreeTableView;
-import com.jfoenix.skins.JFXTableColumnHeader;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TreeTableColumn;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
+import me.xdrop.fuzzywuzzy.FuzzySearch;
 import models.Champion;
 
 import java.io.IOException;
@@ -24,8 +20,8 @@ public class ChampionPicker
         implements Initializable
 {
     @FXML private BorderPane m_ChooseChampionBox;
-    // @FXML private JFXTextField m_ChampionNameTextBox;
-    @FXML private JFXTreeTableView<?> m_ChampionPool;
+    @FXML private TextField m_ChampionSearchBox;
+    @FXML private FlowPane m_ChampionPool;
 
     private LinkedList<Champion> m_Champions = new LinkedList<>();
 
@@ -37,13 +33,6 @@ public class ChampionPicker
             ArrayList<LinkedHashMap<String, Object>> input =
                     new ObjectMapper().readValue(getClass().getResource("/data/list.json"),
                             new TypeReference<ArrayList<LinkedHashMap<String, Object>>>() {});
-
-            TreeTableColumn<ImageView, String> avatarColumn = new JFXTreeTableColumn<>("Avatar");
-            avatarColumn.setPrefWidth(75);
-
-            TreeTableColumn<String, String> nameColumn = new JFXTreeTableColumn<>("Name");
-
-            m_ChampionPool.getColumns().add(avatarColumn);
 
             System.out.println(input.getClass().getSimpleName());
             for (var champion : input)
@@ -57,28 +46,32 @@ public class ChampionPicker
             e.printStackTrace();
         }
 
-        // m_ChampionNameTextBox.focusedProperty().addListener(
-        //         (observableValue, oldValue, newValue) ->
-        //         {
-        //             if (newValue) { m_ChampionNameTextBox.clear(); }
-        //         }
-        //                                                    );
+        onSearchEntry(null);
     }
 
-    public void addAll()
+    @FXML private void onSearchEntry(KeyEvent keyEvent)
     {
+        m_ChampionPool.getChildren().clear();
+
         for (var champ : m_Champions)
         {
-            // m_ChampionPool.getChildren().add(champ.jfxButton);
-            m_ChampionPool.getChildrenUnmodifiable().add(champ.jfxButton);
+            if (m_ChampionSearchBox.getText().equals(""))
+            {
+                m_ChampionPool.getChildren().add(champ.jfxButton);
+                continue;
+            }
+
+            var out = FuzzySearch.partialRatio(m_ChampionSearchBox.getText(), (String) champ.data.get("name"));
+
+            System.out.println("For \"" + champ.data.get("name") + "\" we got: " + out + ".");
+
+            if (out >= 50)
+            {
+                System.out.println("For \"" + champ.data.get("name") + "\" we got: " + out + ".");
+
+                m_ChampionPool.getChildren().add(champ.jfxButton);
+            }
 
         }
-
-        // m_ChampionPool.setStyle("-fx-background-color: gray");
-        // for (int i = 0; i < 10; i++)
-        // {
-        //     m_ChampionPool.getChildren().add(new Button(String.valueOf(i)));
-        // }
-        // System.out.println(m_ChampionPool.getAlignment());
     }
 }

@@ -25,13 +25,10 @@ public class Champion
                 new ImageView(new Image(getClass().getResource("/images/champions/" + data.get("id") + ".png")
                                                   .toString()));
 
-        avatar.setScaleX(0.2);
-        avatar.setScaleY(0.2);
+        avatar.setFitHeight(50);
+        avatar.setFitWidth(50);
 
         jfxButton = new JFXButton("", avatar);
-        jfxButton.setPrefSize(25, 25);
-        jfxButton.setMinSize(25,25);
-        jfxButton.setMaxSize(25,25);
 
         jfxButton.setOnMouseClicked(e ->
                 System.out.println(data.get("description")));
