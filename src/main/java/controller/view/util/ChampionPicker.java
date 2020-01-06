@@ -65,20 +65,13 @@ public class ChampionPicker
                 var cm = (MainViewController) ViewStorage.getInstance().getMainViewFxmlLoader().getController();
 
                 cm.m_ChampionMap.put(cm.m_LastRequestedButton, m_ChampionsCache.getFirst());
-                // cm.m_LastRequestedButton.setBackground(
-                //         new Background(new BackgroundImage(
-                //                 m_ChampionsCache.getFirst().avatar
-                //                 , BackgroundRepeat.NO_REPEAT
-                //                 , BackgroundRepeat.NO_REPEAT
-                //                 , BackgroundPosition.CENTER
-                //                 , BackgroundSize.DEFAULT
-                //         )));
                 System.out.println(cm.m_LastRequestedButton.getStyle());
 
                 var id = m_ChampionsCache.getLast().data.get("id");
                 cm.m_LastRequestedButton.setStyle(
-                        String.format("-fx-background-image: url(images/champions/%s.png);-fx-background-size: 100px " +
-                                "100px;", id)
+                        String.format(
+                                "-fx-background-image: url(images/champions/%s.png);-fx-background-size: 100px 100px;"
+                                , id)
                                                  );
                 // cm.m_LastRequestedButton.setGraphic(m_ChampionsCache.getLast().avatarView);
 
