@@ -7,10 +7,14 @@ import controller.manager.ViewStorage;
 import controller.view.MainViewController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import models.Champion;
 
 import java.io.IOException;
@@ -26,8 +30,8 @@ public class ChampionPicker
 
     public JFXButton m_ActiveButton;
 
-    private LinkedList<Champion> m_Champions = new LinkedList<>();
-    private LinkedList<Champion> m_ChampionsCache;
+    public LinkedList<Champion> m_Champions = new LinkedList<>();
+    public LinkedList<Champion> m_ChampionsCache;
 
     @Override public void initialize(URL url,
                                      ResourceBundle resourceBundle)
@@ -61,14 +65,36 @@ public class ChampionPicker
                 var cm = (MainViewController) ViewStorage.getInstance().getMainViewFxmlLoader().getController();
 
                 cm.m_ChampionMap.put(cm.m_LastRequestedButton, m_ChampionsCache.getFirst());
-                cm.m_LastRequestedButton.setBackground(
-                        new Background(new BackgroundImage(
-                                m_ChampionsCache.getFirst().avatar
-                                , BackgroundRepeat.NO_REPEAT
-                                , BackgroundRepeat.NO_REPEAT
-                                , BackgroundPosition.DEFAULT
-                                , BackgroundSize.DEFAULT
-                        )));
+                // cm.m_LastRequestedButton.setBackground(
+                //         new Background(new BackgroundImage(
+                //                 m_ChampionsCache.getFirst().avatar
+                //                 , BackgroundRepeat.NO_REPEAT
+                //                 , BackgroundRepeat.NO_REPEAT
+                //                 , BackgroundPosition.CENTER
+                //                 , BackgroundSize.DEFAULT
+                //         )));
+                System.out.println(cm.m_LastRequestedButton.getStyle());
+
+                var id = m_ChampionsCache.getLast().data.get("id");
+                cm.m_LastRequestedButton.setStyle(
+                        String.format("-fx-background-image: url(images/champions/%s.png);-fx-background-size: 100px " +
+                                "100px;", id)
+                                                 );
+                // cm.m_LastRequestedButton.setGraphic(m_ChampionsCache.getLast().avatarView);
+
+                System.out.println(cm.m_LastRequestedButton.getStyle());
+
+                var children = cm.m_LastRequestedButton.getParent().getChildrenUnmodifiable();
+
+                for (var child : children)
+                {
+                    if (child instanceof Label)
+                    {
+                        var type = (String) m_ChampionsCache.getLast().data.get("type");
+
+                        ((Label) child).setText(type.toUpperCase());
+                    }
+                }
             }
         }
         else

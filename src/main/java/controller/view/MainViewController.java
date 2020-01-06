@@ -7,13 +7,11 @@ import controller.manager.ViewStorage;
 import controller.view.util.ChampionPicker;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import models.Champion;
 
-import javax.swing.text.View;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -63,29 +61,29 @@ public class MainViewController
         content.setHeading(new Text("Choose champion"));
         content.setBody(ViewStorage.getInstance().getChampionPickerView());
 
-        m_ChampionMap.putIfAbsent(m_RedBanButton_1,null);
-        m_ChampionMap.putIfAbsent(m_RedBanButton_2,null);
-        m_ChampionMap.putIfAbsent(m_RedBanButton_3,null);
-        m_ChampionMap.putIfAbsent(m_RedBanButton_4,null);
-        m_ChampionMap.putIfAbsent(m_RedBanButton_5,null);
+        m_ChampionMap.putIfAbsent(m_RedBanButton_1, null);
+        m_ChampionMap.putIfAbsent(m_RedBanButton_2, null);
+        m_ChampionMap.putIfAbsent(m_RedBanButton_3, null);
+        m_ChampionMap.putIfAbsent(m_RedBanButton_4, null);
+        m_ChampionMap.putIfAbsent(m_RedBanButton_5, null);
 
-        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_1,null);
-        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_2,null);
-        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_3,null);
-        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_4,null);
-        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_5,null);
+        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_1, null);
+        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_2, null);
+        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_3, null);
+        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_4, null);
+        m_ChampionMap.putIfAbsent(m_RedTeamPickButton_5, null);
 
-        m_ChampionMap.putIfAbsent(m_BlueBanButton_1,null);
-        m_ChampionMap.putIfAbsent(m_BlueBanButton_2,null);
-        m_ChampionMap.putIfAbsent(m_BlueBanButton_3,null);
-        m_ChampionMap.putIfAbsent(m_BlueBanButton_4,null);
-        m_ChampionMap.putIfAbsent(m_BlueBanButton_5,null);
+        m_ChampionMap.putIfAbsent(m_BlueBanButton_1, null);
+        m_ChampionMap.putIfAbsent(m_BlueBanButton_2, null);
+        m_ChampionMap.putIfAbsent(m_BlueBanButton_3, null);
+        m_ChampionMap.putIfAbsent(m_BlueBanButton_4, null);
+        m_ChampionMap.putIfAbsent(m_BlueBanButton_5, null);
 
-        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_1,null);
-        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_2,null);
-        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_3,null);
-        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_4,null);
-        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_5,null);
+        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_1, null);
+        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_2, null);
+        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_3, null);
+        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_4, null);
+        m_ChampionMap.putIfAbsent(m_BlueTeamPickButton_5, null);
 
         m_ChampionPickDialog.setTransitionType(JFXDialog.DialogTransition.BOTTOM);
         m_ChampionPickDialog.setContent(content);
@@ -100,5 +98,14 @@ public class MainViewController
 
         m_LastRequestedButton = (JFXButton) mouseEvent.getSource();
         m_ChampionPickDialog.show();
+
+        // ((JFXButton)mouseEvent.getSource()).setBackground(
+        //         new Background(new BackgroundImage(
+        //                 cpController.m_Champions.getFirst().avatar
+        //                 , BackgroundRepeat.NO_REPEAT
+        //                 , BackgroundRepeat.NO_REPEAT
+        //                 , BackgroundPosition.CENTER
+        //                 , BackgroundSize.DEFAULT
+        //         )));
     }
 }
