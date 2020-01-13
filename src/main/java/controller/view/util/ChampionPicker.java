@@ -48,7 +48,6 @@ public class ChampionPicker
                 m_Champions.add(new Champion(champion));
                 m_ChampionPool.getChildren().add(m_Champions.getLast().jfxButton);
             }
-
         }
         catch (IOException e)
         {
@@ -64,13 +63,25 @@ public class ChampionPicker
             {
                 var cm = (MainViewController) ViewStorage.getInstance().getMainViewFxmlLoader().getController();
 
-                cm.m_ChampionMap.put(cm.m_LastRequestedButton, m_ChampionsCache.getFirst());
+                Map targetMap;
+
+                if (cm.m_ChampionMap.containsKey(cm.m_LastRequestedButton))
+                {
+                    targetMap = cm.m_ChampionMap;
+                }else
+                {
+                    targetMap = cm.m_ChampionsBanned;
+                }
+
+                targetMap.put(cm.m_LastRequestedButton, m_ChampionsCache.getFirst());
                 System.out.println(cm.m_LastRequestedButton.getStyle());
 
                 var id = m_ChampionsCache.getLast().data.get("id");
+                var size = cm.m_LastRequestedButton.getPrefHeight();
                 cm.m_LastRequestedButton.setStyle(
                         String.format(
-                                "-fx-background-image: url(images/champions/%s.png);-fx-background-size: 100px 100px;"
+                                "-fx-background-image: url(images/champions/%s.png);-fx-background-size: " + size +
+                                        "px " + size + "px;"
                                 , id)
                                                  );
                 // cm.m_LastRequestedButton.setGraphic(m_ChampionsCache.getLast().avatarView);
@@ -89,6 +100,9 @@ public class ChampionPicker
                     }
                 }
             }
+
+            MainViewController m = ViewStorage.getInstance().getMainViewFxmlLoader().getController();
+            m.hide();
         }
         else
         {
